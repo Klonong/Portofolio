@@ -27,8 +27,8 @@ export function Footer() {
           {/* Social links */}
           <div className="flex items-center gap-3">
             {[
-              { href: "#", icon: FaGithub, label: "GitHub" },
-              { href: "#", icon: FaLinkedin, label: "LinkedIn" },
+              { href: "https://github.com/Klonong", icon: FaGithub, label: "GitHub" },
+              { href: "https://www.linkedin.com/in/junthau/", icon: FaLinkedin, label: "LinkedIn" },
               { href: "mailto:junthau@gmail.com", icon: Mail, label: "Email" },
             ].map((link) => (
               <a

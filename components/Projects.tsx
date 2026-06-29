@@ -31,6 +31,31 @@ const PROJECTS = [
     ],
     technologies: ["React", "ASP.NET Core", "SQL Server"],
   },
+  {
+    title: "Pioma E-Commerce",
+    duration: "June 2026 – Present",
+    description:
+      "A modern full-stack e-commerce platform for discovering and purchasing local bag products, featuring secure authentication, product catalog management, shopping cart, wishlist, and responsive user experience.",
+    responsibilities: [
+      "Developed a full-stack e-commerce application using Next.js App Router and TypeScript",
+      "Designed responsive and reusable UI components with shadcn/ui and Tailwind CSS",
+      "Implemented authentication, user profiles, wishlist, and shopping cart using Supabase Auth",
+      "Designed the database schema and managed data access using Prisma ORM with Supabase PostgreSQL",
+      "Built product browsing, filtering, search, and category-based shopping experiences",
+      "Integrated server actions and optimized data fetching for improved performance and SEO",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    liveUrl: "https://pioma.vercel.app",
+    githubUrl: "#",
+  },
 ];
 
 export function Projects() {
