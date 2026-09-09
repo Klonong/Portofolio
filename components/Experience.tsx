@@ -35,7 +35,7 @@ const EXPERIENCES = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 px-6" aria-label="Experience section">
+    <section id="experience" className="py-28 px-6" aria-label="Experience section">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           label="Experience"

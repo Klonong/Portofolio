@@ -46,10 +46,11 @@ export function Footer() {
 
           {/* Back to top */}
           <motion.button
+            whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             onClick={scrollToTop}
             aria-label="Back to top"
-            className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition-colors hover:border-slate-300 hover:text-slate-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-slate-300 hover:text-slate-700 dark:border-slate-700 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200"
           >
             <ArrowUp className="h-4 w-4" />
           </motion.button>

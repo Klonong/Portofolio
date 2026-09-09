@@ -14,7 +14,7 @@ const HIGHLIGHTS = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 px-6" aria-label="About section">
+    <section id="about" className="py-28 px-6" aria-label="About section">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           label="About Me"
@@ -87,21 +87,24 @@ export function About() {
             {HIGHLIGHTS.map((item, i) => (
               <motion.div
                 key={item.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 shadow-sm"
+                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.32, 0.72, 0, 1] }}
+                whileHover={{ y: -3 }}
+                className="rounded-[1.5rem] bg-slate-100/70 p-1.5 ring-1 ring-black/5 dark:bg-white/[0.04] dark:ring-white/10"
               >
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
-                  <item.icon className="h-4 w-4" />
+                <div className="rounded-[1.125rem] border border-slate-200/70 bg-white p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:border-slate-800 dark:bg-slate-900 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+                  <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-400">
+                    <item.icon className="h-4 w-4" />
+                  </div>
+                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
+                    {item.label}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-slate-900 dark:text-white">
+                    {item.value}
+                  </p>
                 </div>
-                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
-                  {item.label}
-                </p>
-                <p className="mt-1 text-sm font-medium text-slate-900 dark:text-white">
-                  {item.value}
-                </p>
               </motion.div>
             ))}
           </div>

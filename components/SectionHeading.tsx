@@ -20,10 +20,10 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
       className={cn(
         "flex flex-col gap-3",
         align === "center" && "items-center text-center",
@@ -31,7 +31,7 @@ export function SectionHeading({
       )}
     >
       {label && (
-        <span className="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400">
+        <span className="inline-flex w-fit items-center rounded-full border border-blue-200/70 bg-blue-50 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.2em] text-blue-600 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400">
           {label}
         </span>
       )}

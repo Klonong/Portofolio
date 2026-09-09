@@ -56,13 +56,43 @@ const PROJECTS = [
     liveUrl: "https://pioma.vercel.app",
     githubUrl: "#",
   },
+  {
+    title: "MyBag",
+    duration: "Personal Project",
+    description:
+      "A full-stack e-commerce platform for browsing and purchasing bags, built with a decoupled frontend and REST API architecture.",
+    responsibilities: [
+      "Built a responsive React frontend for product browsing and checkout",
+      "Developed a standalone NestJS REST API for products, cart, and orders",
+      "Implemented authentication and secure data handling",
+      "Designed a scalable client-server architecture",
+    ],
+    technologies: ["React", "NestJS", "TypeScript", "REST API"],
+    githubUrl: "https://github.com/Klonong/MyBag",
+    apiUrl: "https://github.com/Klonong/MyBagAPI",
+  },
+  {
+    title: "MyWedding",
+    duration: "Personal Project",
+    description:
+      "A digital wedding invitation and guest management platform with RSVP tracking, built with a separate frontend and backend service.",
+    responsibilities: [
+      "Built an interactive React frontend for digital invitations and RSVPs",
+      "Developed a NestJS REST API for guest and event data management",
+      "Designed the client-server communication and data flow",
+      "Delivered a responsive, mobile-friendly guest experience",
+    ],
+    technologies: ["React", "NestJS", "TypeScript", "REST API"],
+    githubUrl: "https://github.com/Klonong/MyWedding",
+    apiUrl: "https://github.com/Klonong/MyWedding-API",
+  },
 ];
 
 export function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 px-6 bg-slate-50/50 dark:bg-slate-950/30"
+      className="py-28 px-6 bg-slate-50/50 dark:bg-slate-950/30"
       aria-label="Projects section"
     >
       <div className="mx-auto max-w-6xl">

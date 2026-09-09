@@ -15,6 +15,7 @@ const SKILLS = [
     icon: <Server className="h-5 w-5" />,
     skills: [
       "ASP.NET Core",
+      "NestJS",
       "C#",
       ".NET MVC",
       "REST API",
@@ -36,7 +37,7 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 px-6 bg-slate-50/50 dark:bg-slate-950/30" aria-label="Skills section">
+    <section id="skills" className="py-28 px-6 bg-slate-50/50 dark:bg-slate-950/30" aria-label="Skills section">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           label="Skills"
